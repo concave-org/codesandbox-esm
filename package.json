@@ -1,0 +1,25 @@
+{
+  "name": "codesandbox-esm",
+  "version": "1.0.0",
+  "description": "Using Concave as native ESM in CodeSandbox.",
+  "main": "./src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/concave-org/codesandbox-esm.git"
+  },
+  "keywords": [
+    "concave",
+    "esm",
+    "codesandbox",
+    "example"
+  ],
+  "author": "Mats Pfeiffer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/concave-org/codesandbox-esm/issues"
+  },
+  "homepage": "https://github.com/concave-org/codesandbox-esm#readme"
+}
