@@ -6,7 +6,8 @@ import {
   createPipeline
 } from "https://unpkg.com/@concave/concave@1.3.1/dist/concave.esm.js";
 
-import * as helloPipe from "/src/pipelines/hello.js";
+import * as hello from "/src/pipelines/hello.js";
+const helloPipe = () => hello
 
 const appStore = createStore((state, action, dispatch) => {
   switch (
