@@ -6,8 +6,7 @@ import {
   createPipeline
 } from "https://unpkg.com/@concave/concave@1.4.0/dist/concave.esm.js";
 
-import * as hello from "/src/pipelines/hello.js";
-const helloPipe = () => hello
+import * as helloPipe from "/src/pipelines/helloPipe.js";
 
 const appStore = createStore((state, action, dispatch) => {
   switch (
@@ -19,8 +18,8 @@ const appStore = createStore((state, action, dispatch) => {
 });
 
 const routes = [
-  { path: "/", pipe: helloPipe },
-  { path: "/hello", pipe: helloPipe },
+  { path: "/", pipe: () => helloPipe },
+  { path: "/helloPipe", pipe: () => helloPipe },
   { fallback: "/" }
 ];
 
@@ -36,7 +35,7 @@ const logger = (action, dispatch) => {
 const corePipe = createPipeline(logger, appStore, appRouter, appRender);
 
 const initialState = {
-  text: "Hello World"
+  text: "helloPipe World"
 };
 
 runPipeline(corePipe)(initialState);
