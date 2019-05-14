@@ -4,7 +4,7 @@ import {
   createRouter,
   createRenderer,
   createPipeline
-} from "https://unpkg.com/@concave/concave@1.3.1/dist/concave.esm.js";
+} from "https://unpkg.com/@concave/concave@1.4.0/dist/concave.esm.js";
 
 import * as hello from "/src/pipelines/hello.js";
 const helloPipe = () => hello
