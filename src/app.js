@@ -35,7 +35,7 @@ const logger = (action, dispatch) => {
 const corePipe = createPipeline(logger, appStore, appRouter, appRender);
 
 const initialState = {
-  text: "helloPipe World"
+  text: "Hello World"
 };
 
 runPipeline(corePipe)(initialState);
