@@ -1,4 +1,4 @@
-import { createComponent, html } from "https://unpkg.com/@concave/concave@1.5.0/dist/concave.esm.js";
+import { createComponent, html } from "https://unpkg.com/@concave/concave@1.6.0/dist/concave.esm.js";
 
 const render = (state, props) => ({
   h: html`
